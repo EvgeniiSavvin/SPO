@@ -1,5 +1,5 @@
 : even 1 + 2 % ;
-: prime dup 1 allot ! 2 / 2 for dp @ 1 - @ r@ % not if 0 r> r> drop drop exit then endfor 1 ;
+: prime dup 8 allot ! 2 / 2 for dp @ 1 - @ r@ % not if 0 r> r> drop drop exit then endfor 1 ;
 : memput 1 allot ! dp @ 1 - ;
 : primemem prime memput ;
 : cat dup count >r swap dup count dup r> dup rot + dup -rot >r >r -rot >r >r swap r> r> r> r>
